@@ -25,16 +25,28 @@
     <Filter Include="DPP\nlohmann">
       <UniqueIdentifier>{4e785253-c8f4-4617-bf4a-f3e8a739dc05}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\objects">
+      <UniqueIdentifier>{10c8f528-6da6-4d18-8608-8a501a5853eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\managers">
+      <UniqueIdentifier>{877069ad-7889-41f0-9566-99d5e7ad8e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\handlers">
+      <UniqueIdentifier>{b2ed85a0-8ef7-4e5c-bcf2-3b9aaaecaa3e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyBot.cpp">
+    <ClCompile Include="WikiHub.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DMWikiHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="WikiManager.cpp">
+      <Filter>Source Files\managers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyBot.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="dependencies\include\dpp-10.0\dpp\appcommand.h">
       <Filter>DPP</Filter>
     </ClInclude>
@@ -292,6 +304,15 @@
     </ClInclude>
     <ClInclude Include="dependencies\include\dpp-10.0\dpp\nlohmann\json_fwd.hpp">
       <Filter>DPP\nlohmann</Filter>
+    </ClInclude>
+    <ClInclude Include="WikiHub.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DMWikiHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WikiManager.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

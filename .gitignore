@@ -388,7 +388,7 @@ FodyWeavers.xsd
 
 #custom
 *.sln
-MyBot/dependencies/
+MyBot/dependencies/*
 MyBot\x64
 
 *.filters

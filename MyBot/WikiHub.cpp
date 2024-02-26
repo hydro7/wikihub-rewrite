@@ -2,7 +2,7 @@
 
 int main() {
 	
-	std::string BOT_TOKEN= "MTA0MDE4NzU5MTU1MjY3MTc0NA.GbirYy.gczrHrhGXBZ218FcnBTBceLMAI-zYBWHHjy3_A";
+	std::string BOT_TOKEN = std::getenv("token");
 
 	std::cout << "WikiHub class's constructor called." << "\n";
 	dpp::cluster cluster(BOT_TOKEN, dpp::intents::i_direct_messages);

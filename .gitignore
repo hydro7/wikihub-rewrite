@@ -383,3 +383,14 @@ FodyWeavers.xsd
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+
+
+#custom
+*.sln
+MyBot/dependencies/
+MyBot\x64
+
+*.filters
+*.vcxproj
+updatedpp.sh

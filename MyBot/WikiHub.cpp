@@ -1,12 +1,11 @@
 #include "WikiHub.h"
-std::string BOT_TOKEN = "MTA0MDE4Nzc2MjgwMTkwMTYzOQ.GI_0Ax.9e-oXx4r9ix8JlMERdN3fPEi_EBrp0Yu5A7xXA";
 
 int main() {
 	
-
+	std::string BOT_TOKEN= "MTA0MDE4NzU5MTU1MjY3MTc0NA.GbirYy.gczrHrhGXBZ218FcnBTBceLMAI-zYBWHHjy3_A";
 
 	std::cout << "WikiHub class's constructor called." << "\n";
-	dpp::cluster cluster(BOT_TOKEN, dpp::intents::i_all_intents);
+	dpp::cluster cluster(BOT_TOKEN, dpp::intents::i_direct_messages);
 	/* Output simple log messages to stdout */
 	cluster.on_log(dpp::utility::cout_logger());
 
@@ -16,7 +15,7 @@ int main() {
 			if (!callback.is_error()) {
 				dpp::guild_map guild_map = callback.get<dpp::guild_map>();
 				
-				std::cout << "(S/O)------------- Guild(s) list -------------(S/O)" << "\n";
+				std::cout << "(S/O)------------- Guild(" << guild_map.size() << ") list -------------(S/O)" << "\n";
 				// Down below are example loops
 				//1. range-based for-loop
 				for (auto guild_iterator = guild_map.begin(); guild_iterator != guild_map.end(); guild_iterator++) {
@@ -40,7 +39,7 @@ int main() {
 					it++;
 				}*/
 				
-				std::cout << "(E/O)------------- Guild(s) list -------------(E/O)" << "\n";
+				std::cout << "(S/O)------------- Guild(" << guild_map.size() << ") list -------------(S/O)" << "\n";
 
 			}
 			});
